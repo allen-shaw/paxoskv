@@ -341,15 +341,15 @@ var file_paxoskv_proto_rawDesc = []byte{
 	0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x56, 0x61, 0x6c, 0x75, 0x65, 0x52, 0x03, 0x56,
 	0x61, 0x6c, 0x12, 0x26, 0x0a, 0x04, 0x56, 0x42, 0x61, 0x6c, 0x18, 0x03, 0x20, 0x01, 0x28, 0x0b,
 	0x32, 0x12, 0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x42, 0x61, 0x6c, 0x6c, 0x6f,
-	0x74, 0x4e, 0x75, 0x6d, 0x52, 0x04, 0x56, 0x42, 0x61, 0x6c, 0x32, 0x6e, 0x0a, 0x07, 0x50, 0x61,
-	0x78, 0x6f, 0x73, 0x4b, 0x76, 0x12, 0x31, 0x0a, 0x07, 0x50, 0x72, 0x65, 0x70, 0x61, 0x72, 0x65,
-	0x12, 0x11, 0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x50, 0x72, 0x6f, 0x70, 0x6f,
-	0x73, 0x65, 0x72, 0x1a, 0x11, 0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x41, 0x63,
-	0x63, 0x65, 0x70, 0x74, 0x6f, 0x72, 0x22, 0x00, 0x12, 0x30, 0x0a, 0x06, 0x41, 0x63, 0x63, 0x65,
-	0x70, 0x74, 0x12, 0x11, 0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x50, 0x72, 0x6f,
-	0x70, 0x6f, 0x73, 0x65, 0x72, 0x1a, 0x11, 0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e,
-	0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x6f, 0x72, 0x22, 0x00, 0x42, 0x0b, 0x5a, 0x09, 0x2e, 0x3b,
-	0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x74, 0x4e, 0x75, 0x6d, 0x52, 0x04, 0x56, 0x42, 0x61, 0x6c, 0x32, 0x69, 0x0a, 0x02, 0x4b, 0x76,
+	0x12, 0x31, 0x0a, 0x07, 0x50, 0x72, 0x65, 0x70, 0x61, 0x72, 0x65, 0x12, 0x11, 0x2e, 0x70, 0x61,
+	0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x50, 0x72, 0x6f, 0x70, 0x6f, 0x73, 0x65, 0x72, 0x1a, 0x11,
+	0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x6f,
+	0x72, 0x22, 0x00, 0x12, 0x30, 0x0a, 0x06, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x12, 0x11, 0x2e,
+	0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x50, 0x72, 0x6f, 0x70, 0x6f, 0x73, 0x65, 0x72,
+	0x1a, 0x11, 0x2e, 0x70, 0x61, 0x78, 0x6f, 0x73, 0x6b, 0x76, 0x2e, 0x41, 0x63, 0x63, 0x65, 0x70,
+	0x74, 0x6f, 0x72, 0x22, 0x00, 0x42, 0x0b, 0x5a, 0x09, 0x2e, 0x3b, 0x70, 0x61, 0x78, 0x6f, 0x73,
+	0x6b, 0x76, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -379,10 +379,10 @@ var file_paxoskv_proto_depIdxs = []int32{
 	0, // 3: paxoskv.Acceptor.LastBal:type_name -> paxoskv.BallotNum
 	2, // 4: paxoskv.Acceptor.Val:type_name -> paxoskv.Value
 	0, // 5: paxoskv.Acceptor.VBal:type_name -> paxoskv.BallotNum
-	3, // 6: paxoskv.PaxosKv.Prepare:input_type -> paxoskv.Proposer
-	3, // 7: paxoskv.PaxosKv.Accept:input_type -> paxoskv.Proposer
-	4, // 8: paxoskv.PaxosKv.Prepare:output_type -> paxoskv.Acceptor
-	4, // 9: paxoskv.PaxosKv.Accept:output_type -> paxoskv.Acceptor
+	3, // 6: paxoskv.Kv.Prepare:input_type -> paxoskv.Proposer
+	3, // 7: paxoskv.Kv.Accept:input_type -> paxoskv.Proposer
+	4, // 8: paxoskv.Kv.Prepare:output_type -> paxoskv.Acceptor
+	4, // 9: paxoskv.Kv.Accept:output_type -> paxoskv.Acceptor
 	8, // [8:10] is the sub-list for method output_type
 	6, // [6:8] is the sub-list for method input_type
 	6, // [6:6] is the sub-list for extension type_name
@@ -485,108 +485,108 @@ var _ grpc.ClientConnInterface
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion6
 
-// PaxosKvClient is the client API for PaxosKv service.
+// KvClient is the client API for Kv service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
-type PaxosKvClient interface {
+type KvClient interface {
 	Prepare(ctx context.Context, in *Proposer, opts ...grpc.CallOption) (*Acceptor, error)
 	Accept(ctx context.Context, in *Proposer, opts ...grpc.CallOption) (*Acceptor, error)
 }
 
-type paxosKvClient struct {
+type kvClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewPaxosKvClient(cc grpc.ClientConnInterface) PaxosKvClient {
-	return &paxosKvClient{cc}
+func NewKvClient(cc grpc.ClientConnInterface) KvClient {
+	return &kvClient{cc}
 }
 
-func (c *paxosKvClient) Prepare(ctx context.Context, in *Proposer, opts ...grpc.CallOption) (*Acceptor, error) {
+func (c *kvClient) Prepare(ctx context.Context, in *Proposer, opts ...grpc.CallOption) (*Acceptor, error) {
 	out := new(Acceptor)
-	err := c.cc.Invoke(ctx, "/paxoskv.PaxosKv/Prepare", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/paxoskv.Kv/Prepare", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *paxosKvClient) Accept(ctx context.Context, in *Proposer, opts ...grpc.CallOption) (*Acceptor, error) {
+func (c *kvClient) Accept(ctx context.Context, in *Proposer, opts ...grpc.CallOption) (*Acceptor, error) {
 	out := new(Acceptor)
-	err := c.cc.Invoke(ctx, "/paxoskv.PaxosKv/Accept", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/paxoskv.Kv/Accept", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// PaxosKvServer is the server API for PaxosKv service.
-type PaxosKvServer interface {
+// KvServer is the server API for Kv service.
+type KvServer interface {
 	Prepare(context.Context, *Proposer) (*Acceptor, error)
 	Accept(context.Context, *Proposer) (*Acceptor, error)
 }
 
-// UnimplementedPaxosKvServer can be embedded to have forward compatible implementations.
-type UnimplementedPaxosKvServer struct {
+// UnimplementedKvServer can be embedded to have forward compatible implementations.
+type UnimplementedKvServer struct {
 }
 
-func (*UnimplementedPaxosKvServer) Prepare(context.Context, *Proposer) (*Acceptor, error) {
+func (*UnimplementedKvServer) Prepare(context.Context, *Proposer) (*Acceptor, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Prepare not implemented")
 }
-func (*UnimplementedPaxosKvServer) Accept(context.Context, *Proposer) (*Acceptor, error) {
+func (*UnimplementedKvServer) Accept(context.Context, *Proposer) (*Acceptor, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Accept not implemented")
 }
 
-func RegisterPaxosKvServer(s *grpc.Server, srv PaxosKvServer) {
-	s.RegisterService(&_PaxosKv_serviceDesc, srv)
+func RegisterKvServer(s *grpc.Server, srv *KVServer) {
+	s.RegisterService(&_Kv_serviceDesc, srv)
 }
 
-func _PaxosKv_Prepare_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Kv_Prepare_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Proposer)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(PaxosKvServer).Prepare(ctx, in)
+		return srv.(KvServer).Prepare(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/paxoskv.PaxosKv/Prepare",
+		FullMethod: "/paxoskv.Kv/Prepare",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(PaxosKvServer).Prepare(ctx, req.(*Proposer))
+		return srv.(KvServer).Prepare(ctx, req.(*Proposer))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _PaxosKv_Accept_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Kv_Accept_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Proposer)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(PaxosKvServer).Accept(ctx, in)
+		return srv.(KvServer).Accept(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/paxoskv.PaxosKv/Accept",
+		FullMethod: "/paxoskv.Kv/Accept",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(PaxosKvServer).Accept(ctx, req.(*Proposer))
+		return srv.(KvServer).Accept(ctx, req.(*Proposer))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-var _PaxosKv_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "paxoskv.PaxosKv",
-	HandlerType: (*PaxosKvServer)(nil),
+var _Kv_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "paxoskv.Kv",
+	HandlerType: (*KvServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "Prepare",
-			Handler:    _PaxosKv_Prepare_Handler,
+			Handler:    _Kv_Prepare_Handler,
 		},
 		{
 			MethodName: "Accept",
-			Handler:    _PaxosKv_Accept_Handler,
+			Handler:    _Kv_Accept_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

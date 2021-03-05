@@ -3,7 +3,7 @@ syntax = "proto3";
 package paxoskv;
 option go_package = ".;paxoskv";
 
-service PaxosKv {
+service Kv {
   rpc Prepare (Proposer) returns (Acceptor) {}
   rpc Accept (Proposer) returns (Acceptor) {}
 }
