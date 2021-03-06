@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package paxoskv;
+
+service Kv {
+  rpc Prepare (Proposer) returns (Acceptor) {}
+  rpc Accept (Proposer) returns (Acceptor) {}
+}
+
+message BallotNum {
+  int64 N = 1;
+  int64 ProposerId = 2;
+}
+
+message PaxosInstanceId {
+  string Key = 1;
+  int64 Ver = 2;
+}
+
+message Value {
+  int64  Vi64 = 1;
+}
+
+message Proposer {
+  PaxosInstanceId Id = 1;
+  BallotNum Bal = 2;
+  Value Val = 3;
+}
+
+message Acceptor {
+  BallotNum LastBal = 1;
+  Value Val = 2;
+  BallotNum VBal = 3;
+}
