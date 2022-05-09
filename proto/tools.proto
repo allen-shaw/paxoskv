@@ -1,0 +1,15 @@
+syntax = "proto3";
+package paxos;
+
+option go_package="github.com/AllenShaw19/paxoskv/proto";
+
+message DumpEntryReq {
+  uint64 entity_id = 1;
+  uint64 entry = 2;
+}
+
+message DumpEntryRsp {}
+
+service ToolsService {
+  rpc DumpEntry(DumpEntryReq) returns (DumpEntryRsp);
+}

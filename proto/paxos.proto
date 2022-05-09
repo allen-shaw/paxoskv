@@ -1,0 +1,52 @@
+syntax = "proto3";
+package paxos;
+
+option go_package="github.com/AllenShaw19/paxoskv/proto";
+
+message EntryRecord {
+  uint32 prepared_num = 1;
+  uint32 promised_num = 2;
+  uint32 accepted_num = 3;
+
+  uint64 value_id = 4;
+  bytes value = 5;
+  repeated uint64 uuids = 6;
+
+  bool chosen = 7;
+  bool has_value_id_only = 8;
+}
+
+message CmdHeader {
+  uint64 uuid = 1;
+  int32  result = 2;
+
+  uint64 entity_id = 3;
+  uint64 entry = 4;
+}
+
+message PaxosMsg {
+  CmdHeader header = 1;
+
+  uint32 local_acceptor_id = 2;
+  uint32 peer_acceptor_id = 3;
+
+  EntryRecord local_entry_record = 4;
+  EntryRecord peer_entry_record = 5;
+
+  uint64 max_chosen_entry = 6;
+
+  bool check_empty = 7;
+  bool catchup = 8;
+}
+
+message RangeCacheUpMsg {
+  CmdHeader header = 1;
+
+  uint32 local_acceptor_id = 2;
+  uint32 peer_acceptor_id = 3;
+  
+  uint64 begin_entry = 4;
+  uint64 end_entry = 5;
+}
+
+
