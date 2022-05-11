@@ -84,6 +84,7 @@ func (m *EntityInfoMng) FindEntityInfo(entityId uint64) *EntityInfo {
 }
 
 func (m *EntityInfoMng) CreateEntityInfo(entityId uint64, acceptorNum, localAcceptorId uint32) *EntityInfo {
+	m.monitor.ReportEntityCreate()
 
 }
 
